@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">DesignX</label>
+      <ul>
+        <li><a class="active" href="#">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  <div class="about-section">
+    <h1>About Us Page</h1>
+    <p>What types of people are visiting your About Us page?  Who are they? Most likely, they’re prospective customers considering the purchase of your products or services.
+
+They’re trying to determine if they can trust you.  They want to peek behind the curtain and see if your company is one they’d like to do business with.  They seek answers to questions like these:</p>
+    <p>Resize the browser window to see that this page is responsive by the way.</p>
+  </div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="abdou.jpg" alt="OWNER AND FOUNDER" style="width:100%">
+      <div class="container">
+        <h2>Abdou flih</h2>
+        <p class="title">CEO & Founder</p>
+        <p>الاسطورة الذي صنع هذا الموقع الاسطوري و الجميل الذي يعرف كل الاتشياء في العالم</p>
+        <p>abdouflih44@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+<style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+</style>
+</html>

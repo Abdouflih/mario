@@ -7,20 +7,26 @@
 }
 body{
   font-family: montserrat;
+  margin: 0;
+  background-image: url('https://www.gamerevolution.com/assets/uploads/2018/02/mario-odyssey-the-perfect-level-4-1280x720.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 nav{
-  background: #0082e6;
+  background-color: #0082e6;
   height: 80px;
   width: 100%;
 }
 label.logo{
   color: white;
-  padding-left: 10px; 
   font-size: 35px;
   line-height: 80px;
+  padding-left: 10px;
   font-weight: bold;
 }
 nav ul{
+  z-index: 1;
   float: right;
   margin-right: 20px;
 }
@@ -52,15 +58,16 @@ a.active,a:hover{
 #check{
   display: none;
 }
-@media (max-width: 952px){
+@media (max-width: 900px){
   label.logo{
     font-size: 30px;
+    padding-left: 50px;
   }
   nav ul li a{
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
+@media (max-width: 900px){
   .checkbtn{
     display: block;
   }
@@ -94,4 +101,52 @@ section{
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
-};
+}
+.h123 {
+  color: orange;
+  float: left;
+  font-size: 35px;
+  display: grid;
+}
+
+#second_thing {
+  /*border: solid 5px #3498db;*/
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background:rgba(0,0,0,.5);
+  border-radius:5px;
+  /*height: 352px;
+  width: 435px;*/
+  height: 50%;
+  width: 50%;
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  display: table;
+  box-sizing: border-box;
+  
+}
+#lol1 {
+  background-color: #e67e22;
+}
+/*#lol2 {
+  background-color: #e67e22;
+}; */
+.redColor {
+  color: red;
+}
+@media (max-width: 900px) 
+{
+  #second_thing
+  {
+    margin: 0;
+    padding: 0px;
+    width: 100%
+  }
+}
+.lol2 {
+  padding-top: 15px;
+  color: black;
+}
